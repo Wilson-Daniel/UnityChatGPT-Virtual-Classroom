@@ -178,11 +178,24 @@ Tried to create an innovative educational platform that combines real-time code 
 5. Save changes and now you're good to go.
 
 
-## Challenges faced
-1. OpenAI Unity Package ``https://github.com/srcnalt/OpenAI-Unity`` sometime also give a "HTTP/1.1 401 Unauthorized
-0x00007ff7c48af07d (Unity) StackWalker::GetCurrentCallstack....." error.
-2. 6/10 time the response from ChatGPT API will be null.
-3. If free trial period of your OpenAI account is over then you have to buy token or you'll get the same above error.
-5. AI Assistant api is only available in gpt-3.5-turbo-0301 model.
+## Challenges faced, and how you overcame them
+Implementing the ChatGPT OpenAI Unity package indeed presents some challenges, but with the right approach, these hurdles can be overcome:
+
+- `Handling "HTTP/1.1 401 Unauthorized" Error:`
+  This error occurs when the API credentials are invalid or expired. To tackle this, it's essential to ensure that the correct API key/token is provided and that it is up-to-date.
+
+- `Dealing with Null Responses from ChatGPT API:`
+  When the response from the ChatGPT API is null, it can disrupt the user experience. To address this, developers can set up a timeout mechanism or implement a retry logic to resend the API request in case of null responses. 
+- `Managing API Usage and Costs:`
+  During the free trial period or when using a limited API plan, there may be usage restrictions or limitations on the number of requests allowed. To tackle this challenge, developers can implement usage tracking and monitoring within the Unity package. 
+- `API Model Availability:`
+  The AI Assistant API is only available in the gpt-3.5-turbo-0301 model. Developers should ensure that the package clearly communicates this requirement to users and automatically checks the model availability before making API requests. 
+
+- `Documentation and User Guidance:`
+  Clear and comprehensive documentation is vital for users to understand how to use the Unity package effectively and navigate potential challenges. 
+
+- `Community Support and Updates:`
+Regularly updating the Unity package based on user feedback and OpenAI API changes ensures that the implementation remains relevant and reliable.
+
 
 
